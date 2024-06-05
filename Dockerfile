@@ -17,6 +17,6 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["./wait-for-it.sh", "database:5432", "--", "npm", "run", "start"]
+#CMD ["./wait-for-it.sh", "localhost:5432", "--", "npm", "run", "start"]
 
-#CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start"]

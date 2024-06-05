@@ -2,7 +2,13 @@ import { Controller, Get, Post, Body, UseGuards, Query } from '@nestjs/common';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard'; // Ensure the correct import path
 import { ScoresService } from './scores.service';
 import { Score } from './score.entity';
-import { ApiTags, ApiOperation, ApiBody, ApiResponse, ApiBearerAuth } from '@nestjs/swagger';
+import {
+  ApiTags,
+  ApiOperation,
+  ApiBody,
+  ApiResponse,
+  ApiBearerAuth,
+} from '@nestjs/swagger';
 
 @Controller('scores')
 @ApiTags('scores')
